@@ -1,0 +1,17 @@
+c:\users\cojman\documents\visual studio 2015\Projects\Books\Books\bin\Debug\Books.exe.config
+c:\users\cojman\documents\visual studio 2015\Projects\Books\Books\obj\Debug\Books.csprojResolveAssemblyReference.cache
+c:\users\cojman\documents\visual studio 2015\Projects\Books\Books\obj\Debug\Books.Properties.Resources.resources
+c:\users\cojman\documents\visual studio 2015\Projects\Books\Books\obj\Debug\Books.csproj.GenerateResource.Cache
+c:\users\cojman\documents\visual studio 2015\Projects\Books\Books\bin\Debug\Books.exe
+c:\users\cojman\documents\visual studio 2015\Projects\Books\Books\bin\Debug\Books.pdb
+c:\users\cojman\documents\visual studio 2015\Projects\Books\Books\bin\Debug\EntityFramework.dll
+c:\users\cojman\documents\visual studio 2015\Projects\Books\Books\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\cojman\documents\visual studio 2015\Projects\Books\Books\bin\Debug\System.Data.SQLite.dll
+c:\users\cojman\documents\visual studio 2015\Projects\Books\Books\bin\Debug\System.Data.SQLite.EF6.dll
+c:\users\cojman\documents\visual studio 2015\Projects\Books\Books\bin\Debug\System.Data.SQLite.Linq.dll
+c:\users\cojman\documents\visual studio 2015\Projects\Books\Books\bin\Debug\EntityFramework.xml
+c:\users\cojman\documents\visual studio 2015\Projects\Books\Books\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\cojman\documents\visual studio 2015\Projects\Books\Books\bin\Debug\System.Data.SQLite.xml
+c:\users\cojman\documents\visual studio 2015\Projects\Books\Books\obj\Debug\Books.exe
+c:\users\cojman\documents\visual studio 2015\Projects\Books\Books\obj\Debug\Books.pdb
+C:\Users\Cojman\documents\visual studio 2015\Projects\Books\Books\obj\Debug\Books.Książki.resources
