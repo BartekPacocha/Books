@@ -197,8 +197,7 @@ namespace Books
 
 
 /*
-
-            
+       
 DateTime localDate = DateTime.Now;
 DateTime past = DateTime.Now;
 
