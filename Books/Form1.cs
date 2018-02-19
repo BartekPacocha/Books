@@ -25,7 +25,6 @@ namespace Books
         {
             InitializeComponent();
 
-
             dataBase();
             createGrid();
 
@@ -70,6 +69,7 @@ namespace Books
             dataGridView1.Columns["isReaded"].ReadOnly = false;
 
             pDetail.Visible = false;
+            pAddBook.Visible = false;
         }
         //----------------------------------------------------------------------------
         public void dataBase()
@@ -135,7 +135,7 @@ namespace Books
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btUpdate_Click(object sender, EventArgs e)
         {
             rowIndex = getRowIndex();
             tbTitle.Text = rowIndex.ToString();
@@ -185,10 +185,64 @@ namespace Books
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btAdd_Click(object sender, EventArgs e)
         {
-            var myForm = new AddBook();
-            myForm.Show();
+            if (!pAddBook.Visible) pAddBook.Visible = true;
+            else pAddBook.Visible = false;
+        }
+
+        private void rbOk_CheckedChanged(object sender, EventArgs e)
+        {
+            //MessageBox.Show("inside ok");
+            var author = tbAddAuthor.Text;
+            var title = tbAddTitle.Text;
+            var pageNumber = nuAddPageNumber.Value;
+            var date = DateTime.Now;
+            open();
+            if (polaczenie.State == ConnectionState.Open)
+            {
+                //MessageBox.Show("inside open");
+                zapytanieSQL = string.Format("insert into book(id, author, title, pageNumber, startDate) values (10 ,author, title, pageNumber, date)", polaczenie);
+
+                if (author != "" && title != "" && pageNumber > 0)
+                {
+                    try
+                    {
+                        komenda = new SQLiteCommand(zapytanieSQL, polaczenie);
+                        komenda.ExecuteNonQuery();
+                    }
+                    catch (Exception ex)
+                    {
+                        throw new Exception(ex.Message);
+                    }
+                }
+
+                //MessageBox.Show("inside of");
+                rbOk.Checked = false;
+                close();
+
+            }
+            /*
+          
+            zapytanieSQL = string.Format("create table if not exists book(id integer primary key AUTOINCREMENT, author varchar(20), title varchar(20), pageNumber integer, pageReade integer, isReaded boolean, startDate dateTimeVariable)");
+                komenda = new SQLiteCommand(zapytanieSQL, polaczenie);
+                komenda.ExecuteNonQuery();
+           
+            try
+            {
+                insertSQL.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            */
+
+        }
+
+        private void rbCancel_CheckedChanged(object sender, EventArgs e)
+        {
+            pAddBook.Visible = false;
         }
     }
 }

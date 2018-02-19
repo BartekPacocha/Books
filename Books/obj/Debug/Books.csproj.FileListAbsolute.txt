@@ -15,4 +15,3 @@ c:\users\cojman\documents\visual studio 2015\Projects\Books\Books\bin\Debug\Syst
 c:\users\cojman\documents\visual studio 2015\Projects\Books\Books\obj\Debug\Books.exe
 c:\users\cojman\documents\visual studio 2015\Projects\Books\Books\obj\Debug\Books.pdb
 C:\Users\Cojman\documents\visual studio 2015\Projects\Books\Books\obj\Debug\Books.Książki.resources
-C:\Users\Cojman\documents\visual studio 2015\Projects\Books\Books\obj\Debug\Books.AddBook.resources
